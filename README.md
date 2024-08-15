@@ -42,11 +42,3 @@ Below is a diagram that illustrates the sequence of steps and interactions betwe
 
 ![Sample diagram](Sample_diagram/Sample%20diagram.png)
 
-## Getting Started
-
-To run this script, follow the instructions below:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
