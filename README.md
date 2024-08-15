@@ -42,3 +42,15 @@ Below is a diagram that illustrates the sequence of steps and interactions betwe
 
 ![Sample diagram](Sample_diagram/Sample%20diagram.png)
 
+# Code Explanation
+
+This document provides a detailed explanation of the DeFi script, highlighting key functions, logic, and the interactions with the Uniswap and Aave protocols. The script is designed to facilitate a token swap from USDC to LINK on Uniswap and subsequently supply the LINK tokens to Aave's lending pool to start earning interest.
+
+## 1. Initial Setup
+
+### Importing Required Libraries
+The script begins by importing essential libraries such as `ethers.js`, which is used for interacting with the Ethereum blockchain. Additionally, ABI files for the Uniswap and Aave smart contracts are imported to facilitate interaction with these protocols.
+
+```javascript
+const { ethers } = require("ethers");
+const { UNISWAP_ABI, AAVE_ABI } = require("./abis");
